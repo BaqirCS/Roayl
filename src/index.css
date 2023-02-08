@@ -1,0 +1,103 @@
+.form-overal {
+  direction: rtl;
+}
+.padding-0 {
+  padding-right: 0;
+  padding-left: 0;
+}
+.mjr {
+  margin-right: -60px;
+}
+.mjo {
+  margin-right: 50px;
+}
+.all-component {
+  margin-right: 50px;
+}
+.df {
+  display: flex;
+}
+.mr1 {
+  margin-right: 20px;
+}
+.mtx {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.mr2 {
+  margin-right: 90px;
+}
+.mr0 {
+  margin-right: 40px;
+}
+.mr4 {
+  margin-right: 300px;
+}
+.msc {
+  margin-right: 10px;
+}
+.mrcg {
+  margin-right: 12px;
+}
+.mts5 {
+  margin-top: 15px;
+}
+
+.mrxt {
+  margin-right: 15px;
+}
+.md {
+  margin-left: 20px;
+}
+.mr6 {
+  margin-right: 100px;
+}
+.mtz {
+  margin-top: 50px;
+}
+.mt0 {
+  margin-top: 50px;
+}
+.mrz {
+  margin-right: 150px;
+}
+.mrzx {
+  margin-right: 130px;
+}
+.mrzpic {
+  margin-right: 110px;
+}
+.mrsm {
+  margin-left: 10px;
+}
+.mlb {
+  margin-left: 20px;
+}
+.mf-2 {
+  margin-top: 5px;
+}
+.my {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.content {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url('./image/royals.png');
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 600px 600px;
+}
+
+.mrt1 {
+  margin-right: 10px;
+}
+.mtn {
+  margin-top: 5px;
+}
+.mtn1 {
+  margin-top: 10px;
+}
