@@ -14,7 +14,7 @@ class ComponentToPrint extends React.Component {
     const time = data.time;
     const pish = data.pime;
     const sum = data.overalPrice;
-    const remain = sum - bill.prePay;
+    const remain = sum - Number(bill.prePay);
 
     return (
       <div className="all-component form-overal mt0">
@@ -169,7 +169,14 @@ class ComponentToPrint extends React.Component {
           <div className="df">
             <p className="">
               {' '}
-              ورودی:<b> {bill.enterance}</b> تومان
+              ورودی:
+              {bill.enterance > 0 ? (
+                <>
+                  <b> {bill.enterance}</b> تومان
+                </>
+              ) : (
+                <> ندارد </>
+              )}
             </p>
 
             {bill.discount > 0 && (
@@ -191,7 +198,10 @@ class ComponentToPrint extends React.Component {
           <p>
             توضیحات: {bill.description}.
             {bill.full ? (
-              <>کل مبلغ تسویه کامل شده است . </>
+              <>
+                مانده حساب مبلغ <b>{remain}</b> تومان است که کل مبلغ تسویه کامل
+                شده است .{' '}
+              </>
             ) : (
               <>
                 مانده حساب مبلغ <b>{remain}</b> تومان است که باید تا 6 روز مانده
@@ -443,7 +453,14 @@ class ComponentToPrintSalon extends React.Component {
           <div className="df">
             <p className="">
               {' '}
-              ورودی : <b>{bill.enterance}</b> تومان
+              ورودی:
+              {bill.enterance > 0 ? (
+                <>
+                  <b> {bill.enterance}</b> تومان
+                </>
+              ) : (
+                <> ندارد </>
+              )}
             </p>
             {bill.discount > 0 && (
               <p className="mr6">
@@ -466,11 +483,14 @@ class ComponentToPrintSalon extends React.Component {
           <p>
             توضیحات: {bill.description}.
             {bill.full ? (
-              <>کل حساب تسویه شده است . </>
+              <>
+                مانده حساب مبلغ <b>{remain}</b> تومان است که کل مبلغ تسویه کامل
+                شده است .{' '}
+              </>
             ) : (
               <>
-                باقی مانده ی حساب مبلغ {remain} است که باید تا 6 روز قبل مراسم
-                تسویه گردد.
+                باقی مانده ی حساب مبلغ <b>{remain}</b> تومان است که باید تا 6
+                روز قبل مراسم تسویه گردد.
               </>
             )}
             در ضمن قیمت غذا به روز میباشد و امکان تغییر در قیمت نهایی وجود دارد.

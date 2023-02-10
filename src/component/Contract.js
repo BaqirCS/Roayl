@@ -265,7 +265,7 @@ export default function Contract() {
       if (item.check) {
         item.price = item.overal * item.number;
         //calculate the sum of extra food
-        sum += item.price;
+        sum += Number(item.price);
         return item;
       }
     });
@@ -276,7 +276,7 @@ export default function Contract() {
       if (item.check) {
         item.price = item.overal * item.number;
         //calculate the sum of food options
-        sum += item.price;
+        sum += Number(item.price);
         return item;
       }
     });
@@ -286,7 +286,7 @@ export default function Contract() {
     const salonDesign = simpleDesign.filter((item) => {
       if (item.check) {
         //calculate the sum of salon design items
-        sum += item.price;
+        sum += Number(item.price);
         return item;
       }
     });
@@ -296,7 +296,7 @@ export default function Contract() {
     const finalFire = fire.filter((item) => {
       if (item.check) {
         //calculate the sum of fire works
-        sum += item.price;
+        sum += Number(item.price);
         return item;
       }
     });
@@ -307,7 +307,7 @@ export default function Contract() {
       if (item.check) {
         item.price = item.overal * item.number;
         //calculate the sum of tashrifat
-        sum += item.price;
+        sum += Number(item.price);
         return item;
       }
     });
@@ -1042,7 +1042,7 @@ export default function Contract() {
                     id="customerName"
                     placeholder=" ورودی"
                     style={{ width: '40%' }}
-                    value={bill.guestNum < 200 ? bill.enterance : 0}
+                    value={bill.enterance}
                     onChange={(e) =>
                       setBill({ ...bill, enterance: e.target.value })
                     }

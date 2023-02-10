@@ -63,45 +63,45 @@ export const mainFood = [
   {
     name: 'جوجه لقمه گوشت',
     id: 52,
-    price: 220000,
+    price: 215000,
   },
 
   {
     name: 'جوجه و لقمه',
     id: 50,
-    price: 170000,
+    price: 185000,
   },
 
   {
     name: 'چلو جوجه',
     id: 57,
-    price: 170000,
+    price: 185000,
   },
   {
     name: ' زرشک پلو مرغ گوشت ',
     id: 56,
-    price: 210000,
+    price: 215000,
   },
   {
     name: 'چلو گوشت',
     id: 55,
-    price: 235000,
+    price: 240000,
   },
 
   {
     name: 'مرغ و لقمه ',
     id: 54,
-    price: 170000,
+    price: 185000,
   },
   {
     name: 'چلو لقمه',
     id: 58,
-    price: 170000,
+    price: 185000,
   },
   {
     name: 'زرشک پلو مرغ',
     id: 51,
-    price: 125000,
+    price: 135000,
   },
 ];
 
@@ -249,31 +249,31 @@ export const fireWorks = [
   {
     name: 'چهار ابشار',
     id: 400,
-    price: 1500000,
+    price: 2000000,
     check: false,
   },
   {
     name: 'شیش ابشار',
     id: 401,
-    price: 1800000,
+    price: 2500000,
     check: false,
   },
   {
     name: 'هشت ابشار',
     id: 402,
-    price: 2000000,
+    price: 2800000,
     check: false,
   },
   {
     name: 'ده ابشار',
     id: 403,
-    price: 2500000,
+    price: 3200000,
     check: false,
   },
   {
     name: 'دوازده ابشار',
     id: 404,
-    price: 3000000,
+    price: 3500000,
     check: false,
   },
   {
@@ -285,7 +285,7 @@ export const fireWorks = [
   {
     name: 'فلکه ای سه شاخه',
     id: 406,
-    price: 1500000,
+    price: 2000000,
     check: false,
   },
   {
