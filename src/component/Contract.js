@@ -242,10 +242,10 @@ export default function Contract() {
 
     //error part to show to customer;
     // eslint-disable-next-line
-    if (!maiFood || bill.guestNum == 0) {
-      return console.log('no no no');
-    }
-    let sum;
+    // if (!maiFood || bill.guestNum == 0) {
+    //   return console.log('no no no');
+    // }
+    let sum = 0;
     //find the main food
     const mfnv = { name: '', price: 0, overal: 0 };
     main.map((item) => {
@@ -257,7 +257,9 @@ export default function Contract() {
       }
       return item;
     });
-    sum = mfnv.overal;
+    if (mfnv.overal) {
+      sum = mfnv.overal;
+    }
 
     //find the extra foods
     // eslint-disable-next-line
