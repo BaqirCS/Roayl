@@ -3,7 +3,7 @@ export const extraFood = [
     name: 'لقمه خالی',
     id: 1,
     price: 0,
-    overal: 170000,
+    overal: 168000,
     check: false,
     number: 0,
   },
@@ -11,7 +11,7 @@ export const extraFood = [
     name: 'چلو گوشت',
     id: 3,
     price: 0,
-    overal: 250000,
+    overal: 262000,
     check: false,
     number: 0,
   },
@@ -27,7 +27,7 @@ export const extraFood = [
     name: 'برنج خالی',
     id: 4,
     price: 0,
-    overal: 45000,
+    overal: 55000,
     check: false,
     number: 0,
   },
@@ -36,7 +36,7 @@ export const extraFood = [
     name: 'جوجه خالی',
     id: 7,
     price: 0,
-    overal: 170000,
+    overal: 168000,
     check: false,
     number: 0,
   },
@@ -45,7 +45,7 @@ export const extraFood = [
     name: 'شوید پلو',
     id: 5,
     price: 0,
-    overal: 55000,
+    overal: 65000,
     check: false,
     number: 0,
   },
@@ -63,7 +63,7 @@ export const mainFood = [
   {
     name: 'جوجه لقمه گوشت',
     id: 52,
-    price: 255000,
+    price: 270000,
   },
 
   {
@@ -80,12 +80,12 @@ export const mainFood = [
   {
     name: ' زرشک پلو مرغ گوشت ',
     id: 56,
-    price: 255000,
+    price: 270000,
   },
   {
     name: 'چلو گوشت',
     id: 55,
-    price: 288000,
+    price: 295000,
   },
 
   {
