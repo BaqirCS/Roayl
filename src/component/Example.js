@@ -98,15 +98,26 @@ class ComponentToPrint extends React.Component {
           </p>
 
           {mainFood && mainFood.overal > 0 && (
-            <div className="df">
-              <p>
-                غذای اصلی : <b> {mainFood.name && mainFood.name}</b>{' '}
-              </p>
-              <p className="mr1">
-                مبلغ هر پرس غذا همراه نوشابه, برنج و ماست موسیر:{' '}
-                <b>{mainFood.price}</b>ت
-              </p>
-            </div>
+            <>
+              {' '}
+              <div className="df">
+                <p>
+                  غذای اصلی : <b> {mainFood.name && mainFood.name}</b>{' '}
+                </p>
+                <p className="mr1">
+                  مبلغ هر پرس غذا همراه نوشابه, برنج و ماست موسیر:{' '}
+                  <b>{mainFood.price}</b>ت
+                </p>
+              </div>
+              {mainFood.name === 'جوجه و لقمه' && (
+                <>
+                  <p>
+                    که به تعداد {bill.guestNum / 2} پرس جوجه و به تعداد{' '}
+                    {bill.guestNum / 2} پرس لقمه است.{' '}
+                  </p>
+                </>
+              )}
+            </>
           )}
 
           {extraFood && extraFood.length > 0 && <p>سرشکن انتخاب شده :</p>}
@@ -214,11 +225,9 @@ class ComponentToPrint extends React.Component {
               </>
             ) : (
               <>
-                مانده حساب مبلغ <b>{remain}</b> تومان است که باید تا 6 روز مانده
-                به تاریخ مراسم تسویه گردد.
+                مانده حساب مبلغ <b>{remain}</b> تومان است
               </>
             )}
-            در ضمن قیمت غذا به روز میباشد و امکان تغییر در قیمت نهایی وجود دارد.
           </p>
 
           <div className="df mtz">
@@ -499,11 +508,9 @@ class ComponentToPrintSalon extends React.Component {
               </>
             ) : (
               <>
-                باقی مانده ی حساب مبلغ <b>{remain}</b> تومان است که باید تا 6
-                روز قبل مراسم تسویه گردد.
+                باقی مانده ی حساب مبلغ <b>{remain}</b> تومان است
               </>
             )}
-            در ضمن قیمت غذا به روز میباشد و امکان تغییر در قیمت نهایی وجود دارد.
           </p>
         </div>
       </div>
