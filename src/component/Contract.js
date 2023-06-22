@@ -60,8 +60,8 @@ export default function Contract() {
     partyKind: 'عروسی',
     guestNum: 0,
     priod: 'شب',
-    from: '19',
-    to: '23',
+    from: '18:30',
+    to: '22:30',
     prePay: 0,
     taxt: 9,
     enterance: 0,
@@ -535,7 +535,7 @@ export default function Contract() {
                     از ساعت
                   </label>
                   <input
-                    type="number"
+                    type="text"
                     className="form-control "
                     id="from"
                     placeholder=""
@@ -548,7 +548,7 @@ export default function Contract() {
                     تا ساعت
                   </label>
                   <input
-                    type="number"
+                    type="text"
                     className="form-control "
                     id="to"
                     placeholder=""

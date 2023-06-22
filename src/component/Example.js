@@ -83,7 +83,7 @@ class ComponentToPrint extends React.Component {
             ) : (
               <>
                 در ضمن ساعت شام بانوان ساعت{' '}
-                {bill.priod === 'شب' ? <>20:40 </> : <>12:30 </>} و شام اقایان
+                {bill.priod === 'شب' ? <>21:30 </> : <>12:30 </>} و شام اقایان
                 20 دقیقه بعد سرو میشود.
               </>
             )}
@@ -159,7 +159,13 @@ class ComponentToPrint extends React.Component {
                 ))}
                 {finalTashrifat &&
                   finalTashrifat.length > 0 &&
-                  finalTashrifat.map((xp) => <b key={xp.id}> {xp.name},</b>)}
+                  finalTashrifat.map((xp) => (
+                    <b key={xp.id}>
+                      {' '}
+                      {xp.number} نفر &nbsp;
+                      {xp.name},
+                    </b>
+                  ))}
               </small>
             </p>
           )}
