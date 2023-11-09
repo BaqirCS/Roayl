@@ -319,7 +319,7 @@ export default function Contract() {
     // //enterance
     sum += Number(bill.enterance);
 
-    //taxt
+    // //taxt
     sum += (sum * Number(bill.taxt)) / 100;
 
     // //discoun

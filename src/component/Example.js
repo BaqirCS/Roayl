@@ -83,7 +83,7 @@ class ComponentToPrint extends React.Component {
             ) : (
               <>
                 در ضمن ساعت شام بانوان ساعت{' '}
-                {bill.priod === 'شب' ? <>21:30 </> : <>12:30 </>} و شام اقایان
+                {bill.priod === 'شب' ? <>21 </> : <>12:30 </>} و شام اقایان
                 20 دقیقه بعد سرو میشود.
               </>
             )}
@@ -140,7 +140,18 @@ class ComponentToPrint extends React.Component {
           <p>تزیینات انتخاب شده برای سالن :</p>
           {pishQaza && pishQaza.length > 0 && (
             <div className="df">
-              <p>پیش غذا : </p>
+
+<p>
+{bill.priod === 'بعد از ظهر' ? (
+              <>سرویس :</>
+            ) : (
+              <>
+               پیش غذا :
+              </>
+            )}
+</p>
+
+
               {pishQaza.map((item, index) => (
                 <small className="mrsm" key={index}>
                   {' '}
@@ -223,7 +234,12 @@ class ComponentToPrint extends React.Component {
             تومان
           </p>
           <p>
-            توضیحات: {bill.description}.
+            توضیحات: 
+            همچنین در صورت مفقود شدن اشیاء چه قیمتی و غیر قیمتی اعم از طلا کیف و ... مسئولیتی به عهده تالار نمی باشد و به عهده صاحب مراسم است.
+            در ضمن هرگونه مراسم تشریفاتی از قبیل دف زن و دیجی خانم و اقا خارج از توافق تالار پذیرفته نمیگردد و در صورت انجام این موارد توسط صاحب مراسم باید خسارت پرداخت نماید.
+            هزینه آب معدنی بر عهده تالار می باشد و در صورت شارژ شدن صاحب مراسم ملزم است هزینه ان  را پرداخت کند.
+            
+            {bill.description}
             {bill.full ? (
               <>
                 مانده حساب مبلغ <b>{remain}</b> تومان است که کل مبلغ تسویه کامل
@@ -506,6 +522,7 @@ class ComponentToPrintSalon extends React.Component {
             تومان
           </p>
           <p>
+      
             توضیحات: {bill.description}.
             {bill.full ? (
               <>
