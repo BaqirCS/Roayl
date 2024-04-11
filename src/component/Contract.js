@@ -63,7 +63,7 @@ export default function Contract() {
     from: '18:30',
     to: '22:30',
     prePay: 0,
-    taxt: 9,
+    taxt: 10,
     enterance: 0,
     discount: 0,
     full: false,
@@ -1094,6 +1094,7 @@ export default function Contract() {
                     value={bill.taxt}
                   >
                     <option value={9}>9%</option>
+                   <option value={10}>10%</option>
                     <option value={15}>15%</option>
                   </select>
                 </div>
